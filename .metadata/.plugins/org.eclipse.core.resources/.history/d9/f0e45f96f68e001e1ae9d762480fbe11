@@ -1,0 +1,89 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ page import="java.util.*"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="inventory.Index" %>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    
+    <body>
+
+        
+      /*  <%
+            HttpSession sesion=request.getSession(false);
+            Enumeration e=sesion.getAttributeNames();
+            
+            if (e.hasMoreElements())
+            {
+                out.print("Bienvenido de vuelta, " + sesion.getAttribute("nombre"));
+            }
+        %>*/
+        <br> 
+        <%
+            Cookie ck[]=request.getCookies();
+            if(ck!=null)
+            {
+            out.print("Tu calculo anterior fue: " );
+                for(int i=0;i<ck.length;i++)
+                {
+                    
+
+                    if(ck[i].getName().equals("altura"))
+                    {
+                        out.print("Altura: "+ck[i].getValue() );
+
+                    }
+                    
+                    if(ck[i].getName().equals("base"))
+                    {
+                        out.print("Base: "+ck[i].getValue() );
+
+                    }
+                    
+                    if(ck[i].getName().equals("area"))
+                    {
+                        out.print("Area: "+ck[i].getValue() );
+
+                    }
+                    
+                    if(ck[i].getName().equals("perimetro"))
+                    {
+                        out.print("Perímetro: "+ck[i].getValue() );
+
+                    }
+                
+                }
+
+            }
+            
+        %>
+        
+        <h1>Cálculo de área y perímetro - triangulos equilateros</h1>
+        <h2>Introduzca la información requerida</h2>
+            
+            <form action="calculaTriangulo" method="post">
+                Nombre:
+                <br>
+                <input type="text" name="nombre" value=""><br>
+                
+                Base:
+                <br>
+                <input type="text" name="base" value=""><br>
+                
+                Altura:
+                <br> 
+                <input type="text" name="altura" value=""><br>
+                
+                <input type="submit" value="Calcular!">
+                                
+            </form>
+           
+    </body>
+    
+</html>

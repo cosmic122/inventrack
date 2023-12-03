@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Generador de Scripts </h1>
+        <h2>Introduzca la información requerida</h2>
+            
+            <form action="calculaTriangulo" method="post">
+                Nombre del usuario:
+                <br>
+                <input type="text" name="nombre" value=""><br>
+                
+                Número a asignar:
+                <br>
+                <input type="text" name="base" value=""><br>
+                
+                Nombre de la compañía:
+                <br> 
+                <input type="text" name="altura" value=""><br>
+                
+                SKU:
+                <br> 
+                <input type="text" name="altura" value=""><br>
+                
+                Ticket #:
+                <br> 
+                <input type="text" name="altura" value=""><br>
+                
+                <input type="submit" value="Calcular!">
+                                
+            </form>
+
+</body>
+</html>
