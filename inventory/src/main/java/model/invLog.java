@@ -21,6 +21,8 @@ public class invLog {
     private int ticket;
     public int getTicket(){ return ticket; }
     public void setTicket(int ticket) { this.ticket = ticket; }
+    
+    
     /*
     private int area;
     private int perimetro;
