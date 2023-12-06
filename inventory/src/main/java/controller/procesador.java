@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @WebServlet(name = "procesaInfo" , urlPatterns = {"/procesaInfo"})
-public class procesaInfo extends HttpServlet {
+public class procesador extends HttpServlet {
  
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response )
@@ -26,30 +26,13 @@ public class procesaInfo extends HttpServlet {
             String sku=request.getParameter("sku");
             String companyname=request.getParameter("companyname");
             String ticket=request.getParameter("ticket");
+            
+            request.setAttribute();
            
-                model.UserActivaton a=new model.log(base,altura);
+                model.invLog a=new model.invLog(upn,did,sku,companyname,ticket);
                 a.area();
                 a.perimetro();
-                
-                Cookie ck=new Cookie("base",base);
-                response.addCookie(ck);
-                
-                ck=new Cookie("altura",altura);
-                response.addCookie(ck);
-                
-                String StArea = Integer.toString(a.getArea());
-                ck=new Cookie("area",StArea);
-                response.addCookie(ck);
-                
-                String StPer = Integer.toString(a.getPerimetro());
-                ck=new Cookie("perimetro", StPer);
-                response.addCookie(ck);
-                
-               
-                
-                HttpSession sesion= request.getSession(false);
-                sesion.setAttribute("nombre", nombre);
-                
+                                
                 int area=a.getArea();
                 int perimetro=a.getPerimetro();
                 
