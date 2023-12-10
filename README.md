@@ -2,6 +2,7 @@
 
 *** Descripción y Resumen Ejecutivo ***
 
+
 La compañía necesita un programa que pueda centralizar el registro de activaciones de usuarios para propósitos de facturación.
 
 Inventrack es una aplicación que se propone como solución para esta problemática. Este programa le permitiría a los usuarios del equipo de Soporte que ejecutan las activaciones en el sistema, registrar cada vez que activen un usuario y de esta forma crear un registro de inventario (invLog), que luego sería accesible para los usuarios en el departamento de Facturación que requieran acceder a esta información.
@@ -17,6 +18,7 @@ Esta misma información sería entonces almacenada en una base de datos que ser�
 En el back-end, la aplicación registrará esta información en la base de datos y creará un objeto de tipo userActivation que funcionará como entrada en la base de datos que contiene la información de cada activación individual.
 
 *** Requerimientos ***
+
 
 Java versión 17 Servidores de aplicación: Tomcat 10.1
 
@@ -42,3 +44,4 @@ Capacidad para guardar la información en servidor de base de datos SQL.
 Características planeadas:
 Agregar portal para usuarios de Facturación.
 Implementar Cookies
+
