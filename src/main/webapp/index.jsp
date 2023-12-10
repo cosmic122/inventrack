@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.util.*"%>
-<%@page import="controller.procesador" %>
-
+<%@ page import="controller.procesador" %>
 
 <!DOCTYPE html>
 <html>
@@ -11,7 +10,7 @@
     </head>
     
     <body>
-
+    
         <h1>Registro Inventario</h1>
         <h2>Introduzca la información requerida</h2>
             
