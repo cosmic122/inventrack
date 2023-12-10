@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.util.*"%>
-<%@page import="inventory.Index" %>
+<%@page import="controller.procesador" %>
 
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
         <h1>Registro Inventario</h1>
         <h2>Introduzca la información requerida</h2>
             
-            <form action="calculaTriangulo" method="post">
+            <form action="procesador" method="post">
                 Nombre del usuario:
                 <br>
                 <input type="text" name="upn" value=""><br>

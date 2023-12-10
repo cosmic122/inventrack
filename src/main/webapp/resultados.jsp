@@ -11,7 +11,7 @@
     
     <body>
         <%
-            invLog l = (invLog) request.getAttribute("resultArea");
+            invLog l = (invLog) request.getAttribute("invLog");
         %>
         
         <h1>Enable user: </h1>
